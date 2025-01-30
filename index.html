@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News App - Stay Informed</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">📰 News Hub</h1>
+      <p class="header__subtitle">Your one-stop platform for the latest headlines</p>
+      <!-- News Category Navigation -->
+<nav class="nav">
+    <button id="top-headlines-btn" class="nav__button">Top Headlines</button>
+    <button id="technology-btn" class="nav__button">Technology</button>
+    <button id="sports-btn" class="nav__button">Sports</button>
+    <button id="entertainment-btn" class="nav__button">Entertainment</button>
+    <button id="business-btn" class="nav__button">Business</button>
+    <button id="health-btn" class="nav__button">Health</button>
+    <button id="science-btn" class="nav__button">Science</button>
+    <button id="politics-btn" class="nav__button">Politics</button>
+    <button id="world-btn" class="nav__button">World</button>
+    <button id="music-btn" class="nav__button">Music</button>
+    <button id="fashion-btn" class="nav__button">Fashion</button>
+  </nav>
+  
+    </div>
+  </header>
+
+ 
+  
+
+  <main class="main-content">
+    <!-- Search Section -->
+    <section class="search-section">
+      <div class="container">
+        <form id="searchForm" class="search-form">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-form__input"
+            placeholder="Search news by topic, keyword, or category..."
+            aria-label="Search News"
+            required
+          />
+          <button type="submit" class="search-form__button">🔍 Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- News Articles Section -->
+    <section id="newsSection" class="news-section">
+      <div class="container">
+        <h2 class="news-section__title">🗞️ Latest News</h2>
+        <div id="newsContainer" class="news-container">
+          <!-- Placeholder for dynamic content -->
+          <p class="news-placeholder">Loading the latest news...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Powered by <a href="https://newsapi.org" target="_blank" class="footer__link">News API</a> | Designed with ❤️ by Snobbar jaffer
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

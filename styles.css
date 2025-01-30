@@ -1,0 +1,326 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container for consistent spacing */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .header {
+    background: linear-gradient(to right, #0073ff, #00c6ff);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .header__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .nav__button {
+    background-color: #ffffff;
+    color: #0073ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav__button:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.05);
+  }
+  
+  /* Base Style for Navigation Buttons */
+.nav__button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0.5rem;
+  }
+  
+  /* Hover effect for buttons */
+  .nav__button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Active State for Selected Button */
+  .nav__button--active {
+    background-color: #0056b3;
+    font-weight: bold;
+  }
+  
+  /* Specific Button Colors (Optional) */
+  .nav__button--business {
+    background-color: #28a745;
+  }
+  
+  .nav__button--health {
+    background-color: #17a2b8;
+  }
+  
+  .nav__button--science {
+    background-color: #ffc107;
+  }
+  
+  .nav__button--technology {
+    background-color: #007bff;
+  }
+  
+  .nav__button--sports {
+    background-color: #dc3545;
+  }
+  
+  .nav__button--entertainment {
+    background-color: #6f42c1;
+  }
+  
+  .nav__button--politics {
+    background-color: #ff5733;
+  }
+  
+  .nav__button--world {
+    background-color: #8e44ad;
+  }
+  
+  .nav__button--music {
+    background-color: #f39c12;
+  }
+  
+  .nav__button--fashion {
+    background-color: #e74c3c;
+  }
+  
+  /* Active Color for Specific Categories */
+  .nav__button--business.nav__button--active {
+    background-color: #218838;
+  }
+  
+  .nav__button--health.nav__button--active {
+    background-color: #117a8b;
+  }
+  
+  .nav__button--science.nav__button--active {
+    background-color: #e0a800;
+  }
+  
+  .nav__button--technology.nav__button--active {
+    background-color: #0069d9;
+  }
+  
+  .nav__button--sports.nav__button--active {
+    background-color: #c82333;
+  }
+  
+  .nav__button--entertainment.nav__button--active {
+    background-color: #5e2e94;
+  }
+  
+  .nav__button--politics.nav__button--active {
+    background-color: #e44a00;
+  }
+  
+  .nav__button--world.nav__button--active {
+    background-color: #6f42c1;
+  }
+  
+  .nav__button--music.nav__button--active {
+    background-color: #d35400;
+  }
+  
+  .nav__button--fashion.nav__button--active {
+    background-color: #c0392b;
+  }
+  
+  /* Search Section */
+  .search-section {
+    background: #0073ff;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: -1rem;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .search-form__input {
+    width: 60%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-form__input:focus {
+    border-color: #00c6ff;
+  }
+  
+  .search-form__button {
+    background-color: #ffffff;
+    color: #0073ff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .search-form__button:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.05);
+  }
+  
+  /* News Section */
+  .news-section {
+    padding: 2rem 0;
+  }
+  
+  .news-section__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #0073ff;
+  }
+  
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .news-placeholder {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* News Card */
+  .news-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-card__content {
+    padding: 1rem;
+  }
+  
+  .news-card__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-card__description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .news-card__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #0073ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .news-card__link:hover {
+    color: #005bb5;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .footer__text {
+    font-size: 0.9rem;
+  }
+  
+  .footer__link {
+    color: #00c6ff;
+    text-decoration: none;
+  }
+  
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header__title {
+      font-size: 2rem;
+    }
+  
+    .search-form__input {
+      width: 80%;
+    }
+  
+    .news-card__title {
+      font-size: 1rem;
+    }
+  }
+  
